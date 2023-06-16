@@ -19,7 +19,7 @@ const ChatInput = ({ chatId }: Props) => {
 
 	// useSWR to get model
 	const { data: model } = useSWR("model", {
-		fallbackData: "text-davinci-002",
+		fallbackData: "text-davinci-002-render-sha",
 	});
 
 	// ****************************** GENERATE RESPONSE
